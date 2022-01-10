@@ -1,0 +1,27 @@
+const title = document.getElementById("title");
+title.innerText = "aaaaa";     // title 텍스트변경 다른곳에 id있어야 실행가능
+
+<h1 id="title">bbbbbbb</h1> //다른곳에 id있어야 실행가능
+
+
+const title = document.querySelector(".hello h1");
+
+
+
+function handleTitleClick(){
+    title.style.color = "blue";
+}
+title.addEventListener("click", handleTitleClick);
+
+//h1 html element mdn 구글검색
+
+
+function handleMouseEnter(){   //마우스를 위에 올렸을떄
+    title.style.colr = "blue";
+}
+title.addEventListener("mouseenter", handleMouseEnter);
+
+
+handleTitleClick()   //마우스 클릭
+handleMouseLeave()   //마우스 벗어났을떄
+handleWindowResize() //창변했을떄 window.addEvent~로 사용
